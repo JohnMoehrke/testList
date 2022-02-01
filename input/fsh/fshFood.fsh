@@ -1,7 +1,7 @@
-Instance:   ex-compSubmissionSetFull000000000000000
+Instance:   ex-List
 InstanceOf: List
-Title: "Example Comprehensive Full SubmissionSet00000000000000000"
-Description:      "SubmissionSet in List resource conforming fully to Comprehensive metadata. This has all elements fully populated."
+Title: "Example List with contained Patient"
+Description:      "List Resource with contained resources that will not render right and throw IG build errors."
 Usage: #example
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * subject = Reference(Patient/ex-patient)
@@ -14,7 +14,7 @@ Usage: #example
 * identifier[1].use = #usual
 * status = #current
 * mode = #working
-* title = "Example SubmissionSet for comprehensive metadata"
+* title = "Example List showing contained issue"
 //* code = MHDlistTypes#submissionset
 * date = 2004-12-25T23:50:50-05:00
 //* entry[0].item = Reference(DocumentReference/ex-documentreference)
@@ -26,9 +26,9 @@ Usage: #example
 
 
 
-Instance:   ex-pain-11
+Instance:   ex-Observation
 InstanceOf: Observation
-Title: "Example using observation of 11"
+Title: "Example using observation of with contained Patient"
 Description:      "holding invalid values"
 //* meta.security = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST
 * status = #final
