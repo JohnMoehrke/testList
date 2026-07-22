@@ -36,7 +36,9 @@ Description:      "holding invalid values"
 * code.coding = http://loinc.org#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * code.coding[1] = http://snomed.info/sct#225908003 "Pain Score"
 * subject = Reference(Patient/ex-patient)
+* performer = Reference(Practitioner/in-sender)
 * contained[+] = ex-patient
+* contained[+] = in-sender
 * effectiveDateTime = 2004-12-25T23:50:50-05:00
 * valueQuantity.value = 11
 
