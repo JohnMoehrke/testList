@@ -118,7 +118,8 @@ Usage: #example
 * status = #active
 * connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#dicom-wado-rs
 * address = "http://example.org/fhir/dicom-wado-rs"
-* payloadType = #application/dicom
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
+* payloadMimeType = #application/dicom
 
 // Endpoint with an mllp address
 Instance:   ex-endpoint-mllp
@@ -129,7 +130,8 @@ Usage: #example
 * status = #active
 * connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#mllp
 * address = "mllp://example.org:2575"
-* payloadType = #application/hl7-v2
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
+* payloadMimeType = #application/hl7-v2
 
 // Endpoint with an x-mllp address
 Instance:   ex-endpoint-x-mllp
@@ -140,4 +142,5 @@ Usage: #example
 * status = #active
 * connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#mllp
 * address = "x-mllp://example.org:2575"
-* payloadType = #application/hl7-v2
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
+* payloadMimeType = #application/hl7-v2
