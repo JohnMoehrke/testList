@@ -128,7 +128,7 @@ Title: "Example Endpoint with an mllp address"
 Description:      "Endpoint Resource with an mllp address"
 Usage: #example
 * status = #active
-* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#mllp
+* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#hl7v2-mllp
 * address = "mllp://example.org:2575"
 * payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
 * payloadMimeType = #application/hl7-v2
@@ -140,7 +140,7 @@ Title: "Example Endpoint with an x-mllp address"
 Description:      "Endpoint Resource with an x-mllp address"
 Usage: #example
 * status = #active
-* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#mllp
+* connectionType = http://terminology.hl7.org/CodeSystem/endpoint-connection-type#hl7v2-mllp
 * address = "x-mllp://example.org:2575"
 * payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
 * payloadMimeType = #application/hl7-v2
