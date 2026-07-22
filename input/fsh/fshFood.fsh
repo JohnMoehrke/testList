@@ -146,3 +146,29 @@ Usage: #example
 * address = "x-mllp://example.org:2575"
 * payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
 * payloadMimeType = #application/hl7-v2
+
+
+// Endpoint with ftp address
+
+Instance:   ex-endpoint-ftp
+InstanceOf: Endpoint
+Title: "Example Endpoint with an ftp address"
+Description:      "Endpoint Resource with an ftp address"
+Usage: #example
+* status = #active
+* connectionType = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK
+* address = "ftp://example.org:2575"
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
+
+//Endpoint with xtdnaid address
+Instance:   ex-endpoint-xtdnaid
+InstanceOf: Endpoint
+Title: "Example Endpoint with an xtdnaid address"
+Description:      "Endpoint Resource with an xtdnaid address"
+Usage: #example
+* status = #active
+* connectionType = http://terminology.hl7.org/CodeSystem/v3-NullFlavor#UNK
+* address = "xtdnaid://example.org:2575"
+* payloadType = http://terminology.hl7.org/CodeSystem/endpoint-payload-type#any
+
+
